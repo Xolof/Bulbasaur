@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="app.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        * {
+            margin: 0px;
+        }
+        h1, #info {
+            color: white;
+            background-color: #1b4410;
+            width: 25%;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+        }
+        #info {  text-align: left; }
+        p {
+            padding: 5px;
+            font-size: 1.2em;
+        }
+        #three {
+            width: 100px;
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+            left: 2%;
+            top: 75%;
+            margin: 5px;
+            width: 150px;
+        }
+        #three img {
+            width: 150px;
+            height: auto;
+        }
+        #content {
+            border: #000000 solid 2px;
+            height: 95vh;
+            border-radius: 20px;
+            background: url(forest.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px;
+        }
+        #clear {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 5px;
+            border-radius: 4px;
+            background-color: #52644d;
+            border: 3px solid #324d2a;
+            color: white;
+            font-size: 1.1em;
+        }
+        #clear:hover{
+            background-color: #6bb952;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Bulbasaur's forest</h1>
+        <button id="clear">Töm info</button>
+        <div id="info">
+            <h2>Info</h2>
+            <p>Styr Bulbasaur med piltangenterna.</p>
+            <p>Klicka på Bulbasaur om du vill säga hej.</p></div>
+        <div id="three"><img id="bulbasaur" src="bulbasaur.png"></div>
+        <audio id="audio" src="bulbasaurs-cry.mp3" ></audio>
+    </div>
+</body>
+</html>
